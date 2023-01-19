@@ -1,7 +1,7 @@
 ---
 title: "Example Manuscript Template for a Data Analysis Project"
 subtitle: ""
-author: Andreas Handel
+author: Betelihem Getachew test
 date: "`r Sys.Date()`"
 format:
   docx:
@@ -22,8 +22,6 @@ library(here)
 library(knitr)
 ```
 
-``` hist(eyecolor)
-```
 
 # Summary/Abstract
 
@@ -107,10 +105,9 @@ knitr::include_graphics(here("results","height_weight_stratified.png"))
 Example @tbl-resulttable2 shows a summary of a linear model fit.
 
 ```{r}
-#| label: tbl-resulttable2
-#| tbl-cap: "Linear model fit table."
-#| echo: FALSE
-resulttable2 = readRDS(here("results","resulttable2.rds"))
+
+
+resulttable2 = readRDS(here("results","summarytable.rds"))
 knitr::kable(resulttable2)
 ```
 
